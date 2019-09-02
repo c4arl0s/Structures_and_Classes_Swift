@@ -16,15 +16,19 @@ class VideoMode {
     var frameRate = 0.0
     var name: String?
 }
+
 // Structure and Class Instances
 let someResolution = Resolution()
 let someVideoMode = VideoMode()
+
 // Accessing Properties
 print("The width of someResolution is \(someResolution.width)")
 print("The width of someVideoMode is \(someVideoMode.resolution.width)")
+
 // You can also use dot syntax to assign a new value to a variable property:
 someVideoMode.resolution.width = 1280
 print("The width of someVideoMode is now \(someVideoMode.resolution.width)")
+
 // Memberwise Initializers for Structure Types
 let vga = Resolution(width: 640, height: 480)
 // Structures and Enumerations Are Value Types
